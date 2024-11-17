@@ -2,17 +2,16 @@
 
 // sudah klik tombol login belum
 if(isset($_POST['login'])) :
-	$user = "ADMIN@GMAIL.COM";
-	$pass = "PASSWORD";
+	$user = "jangkausehat";
+	$pass = "jangkausehat";
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
 	if($user === $username & $pass === $password) :
 		session_start();
-		$data = "ADMIN@GMAIL.COM";
+		$data = "Admin";
 		$_SESSION['username'] = $data;
 		echo "<script>
-			 alert('Selamat Datang, $username')
 			 document.location.href='user/'
 			 </script>";
 
